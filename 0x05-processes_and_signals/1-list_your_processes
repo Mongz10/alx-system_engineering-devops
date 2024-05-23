@@ -1,0 +1,19 @@
+root@75d75c3b394d:/alx-system_engineering-devops/0x04-loops_conditions_and_parsing# cd ..
+root@75d75c3b394d:/alx-system_engineering-devops# mkdir 0x05-processes_and_signals
+root@75d75c3b394d:/alx-system_engineering-devops# cd 0x05-processes_and_signals
+root@75d75c3b394d:/alx-system_engineering-devops/0x05-processes_and_signals# cat > README.md
+Processes and signals
+^C
+root@75d75c3b394d:/alx-system_engineering-devops/0x05-processes_and_signals# cat > 0-what-is-my-pid
+#!/usr/bin/env bash
+# Displays its own PID.
+
+echo $$
+^C
+root@75d75c3b394d:/alx-system_engineering-devops/0x05-processes_and_signals# cat > 1-list_your_processes
+#!/usr/bin/env bash
+# Displays a list of currently running processes.
+#   Shows all processes, for all users, including those
+#+  which might not have a TTY.
+
+ps -auxf
