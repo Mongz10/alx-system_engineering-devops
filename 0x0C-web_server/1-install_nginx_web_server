@@ -6,4 +6,9 @@ sudo apt -y upgrade
 sudo apt -y install nginx
 sudo chown -R ubuntu:ubuntu /var/www
 echo "Hello World!" > /var/www/html/index.html
+
+# testing nginx configurations
+sudo nginx -t 
+
 sudo service nginx start
+sudo service nginx reload
